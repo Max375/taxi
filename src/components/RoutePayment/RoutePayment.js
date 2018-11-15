@@ -4,12 +4,13 @@ import HeaderTypeTwo from '../HeaderTypeTwo/HeaderTypeTwo';
 import FooterButton from '../FooterButton/FooterButton';
 import DataButton from '../DataButton/DataButton';
 import Button from "../Button/Button";
+import carClassEconomic from "../../assets/img/car_class_economic.png";
+import carClassComfort from "../../assets/img/car_class_comfort.png";
+import carClassVan from "../../assets/img/car_class_van.png";
 
 
 class RoutePayment extends Component {
-    // showLeftMenuCarType = () => {
-    //     left-menu-car-type.style.display = "block";
-    // };
+
     render() {
         return (
             <div className="route-payment container">
@@ -67,44 +68,39 @@ class RoutePayment extends Component {
                     <div className="left-popup-menu-content">
                         <div className="flex-top-wrapper">
                             <p className={'popup-title'}>Выбор класса поездки</p>
-                            <input type="radio" id={'economic'} name={'car-class'} checked/>
+                            <input type="radio" id={'economic'} name={'car-class'}/>
                             <label htmlFor={'economic'}>
+                                <div className="img-adaptive-wrapper">
+                                   <img src={carClassEconomic} alt=""/>
+                                </div>
+                                <div className="inp-text">
                                 Эконом
                                 <p>Renault, Lada, Hyundai</p>
+                                </div>
                             </label>
 
                             <input type="radio" id={'comfort'} name={'car-class'}/>
                             <label htmlFor={'comfort'}>
-
-                                Комфорт
-                                <p>Nissan, Mercedes, BMW</p>
+                                <div className="img-adaptive-wrapper">
+                                    <img src={carClassComfort} alt=""/>
+                                </div>
+                                <div className="inp-text">
+                                    Комфорт
+                                    <p>Nissan, Mercedes, BMW</p>
+                                </div>
                             </label>
 
                             <input type="radio" id={'van'} name={'car-class'}/>
                             <label htmlFor={'van'}>
+                                <div className="img-adaptive-wrapper">
+                                    <img src={carClassVan} alt=""/>
+                                </div>
+                                <div className="inp-text">
                                 Минивен
                                 <p>Для большой компании</p>
+                                </div>
                             </label>
-                            <input type="radio" id={''} name={'car-class'}/>
-                            <label htmlFor={'van'}>
-                                Минивен
-                                <p>Для большой компании</p>
-                            </label>
-                            <input type="radio" id={''} name={'car-class'}/>
-                            <label htmlFor={'van'}>
-                                Минивен
-                                <p>Для большой компании</p>
-                            </label>
-                            <input type="radio" id={''} name={'car-class'}/>
-                            <label htmlFor={'van'}>
-                                Минивен
-                                <p>Для большой компании</p>
-                            </label>
-                            <input type="radio" id={''} name={'car-class'}/>
-                            <label htmlFor={'van'}>
-                                Минивен
-                                <p>Для большой компании</p>
-                            </label>
+
                         </div>
                         <div className="flex-bottom-wrapper">
                             <Button text={'применить'}/>

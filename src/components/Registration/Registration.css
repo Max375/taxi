@@ -14,9 +14,10 @@
 .registration .second-input{
     margin: 0 auto 40px;
 }
-.registration .screen-wrapper--invalid input{
+.registration .screen-wrapper--invalid input.input--invalid{
     border-bottom: solid 1px #e63f3f;
 }
+
 .registration .screen-wrapper--invalid .registration-error-text{
     opacity: 0;
     transition: 0.3s opacity ease;

@@ -13,7 +13,7 @@ class Registration extends Component {
                     <Logo mainText={'Регистрация'} secondaryText={'Регистрация в системе'} />
 
                     <div className="registration-error-text">Текст ошибки</div>
-                    <input type="text" placeholder={'ваш имя'} className={'first-input'}/>
+                    <input type="text" placeholder={'ваш имя'} className={'first-input input--invalid'}/>
                     <input type="text" placeholder={'номер телефона'} className={'second-input'}/>
                     <Button text={'Войти'} />
                     <TransparentButton nameButton={'Уже зарегистрированы?'} />

@@ -15,8 +15,10 @@ class Feedback extends Component {
                         <textarea>Поездкой крайне доволен! Вежливый водитель и интересный собеседник. обсуждали текущее положение дел в хип-хоп культуре. Рекомендую!</textarea>
                     </div>
                     <div className="flex-bottom">
-                        <input type="submit" value="Добавить в Избранное" />
-                        <button className={'button-add-to-black-list'}>Добавить в черный список</button>
+                        <input type="radio" id={'add-to-favorites'} name={'driver-assesment'}/>
+                        <label htmlFor="add-to-favorites">Добавить в Избранное</label>
+                        <input type="radio" id={'add-to-black-list'} name={'driver-assesment'}/>
+                        <label htmlFor="add-to-black-list">Добавить в черный список</label>
                     </div>
                 </div>
                 <FooterButton nameButton={'отправить отзыв'}/>
