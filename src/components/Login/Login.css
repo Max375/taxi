@@ -1,0 +1,54 @@
+.login{
+    width: 100%;
+    text-transform: uppercase;
+}
+.login p{
+    color: #a5a6ac;
+    font-size: 26px;
+    font-family: Roboto;
+}
+.login .entrance{
+    margin: 13vw 0 0 0;
+}
+.login .entrance input{
+    display: block;
+    height: 55px;
+    font-size: 24px;
+    border: none;
+    border-bottom: solid 1px #a5a6ac;
+    width: 78.87%;
+    text-transform: uppercase;
+    margin: 1vw auto 37px;
+    transition: 0.3s border ease;
+}
+
+.login  .entrance-error-text{
+    opacity: 0;
+    transition: 0.3s opacity ease;
+    color: #e63f3f;
+    text-transform: none;
+    font-weight: 600;
+    margin-left: 10.56%;
+}
+
+.login  .entrance--invalid input{
+    border-bottom: solid 1px #e63f3f;
+}
+
+.login  .entrance--invalid .entrance-error-text{
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 500px){
+    .login .entrance input{
+        font-size: 18px;
+        height: 35px;
+    }
+}
+.login .entrance input[type="text"]::placeholder{
+    color: #a5a6ac;
+}
+.loader{
+    height: 45px;
+}

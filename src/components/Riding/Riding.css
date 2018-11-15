@@ -1,0 +1,25 @@
+.riding.container{
+    height: 100%;
+    flex-direction: column;
+}
+.riding .riding-content{
+    height: calc(100vh - 122px);
+    overflow: auto;
+    background: url("../../assets/img/background_map.png");
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3vh;
+}
+
+@media screen and (max-width: 430px){
+    .riding .riding-content{
+        padding-bottom: 7px;
+    }
+}
+
+@media screen and (max-height: 784px){
+    .riding .riding-content{
+        height: 100%;
+        padding-top: 7px;
+    }
+}

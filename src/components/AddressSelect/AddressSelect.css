@@ -1,0 +1,9 @@
+.address-select.container{
+    display: block;
+}
+.address-select{
+    max-height: 100%;
+    width: 100%;
+    background: url("../../assets/img/background_map.png") no-repeat;
+}
+

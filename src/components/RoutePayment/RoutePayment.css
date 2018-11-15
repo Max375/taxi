@@ -1,0 +1,484 @@
+
+.route-payment.container{
+    flex-direction: column;
+    width: 100%;
+}
+@media (orientation: landscape){
+    .route-payment.container{
+        display: block;
+    }
+}
+
+.route-payment .route-payment-content{
+    padding-top: 20px;
+    height: calc(100vh - 231px);
+    overflow: scroll;
+}
+@media screen and (max-height: 630px){
+    .route-payment .route-payment-content{
+        padding-bottom: 0px;
+        overflow: visible;
+    }
+}
+/*
+@media (orientation: landscape){
+    .route-payment-content{
+        height: 100%;
+        overflow: visible;
+    }
+}*/
+.route-payment .content-data-button-wrapper{
+    font-size: 0;
+    vertical-align: top;
+    position: relative;
+}
+
+.route-payment .content-data-button-wrapper .badge{
+    width: 118px;
+    height: 117px;
+    display: inline-block;
+}
+
+
+.route-payment .content-data-button-wrapper .badge-a{
+    background: url("../../assets/img/route-a-bgr.png") no-repeat top 50% left 50%;
+}
+.route-payment .content-data-button-wrapper .badge-b{
+    background: url("../../assets/img/route-b-bgr.png") no-repeat top 50% left 50%;
+}
+.route-payment .content-data-button-wrapper .badge-c{
+    background: url("../../assets/img/route-c-bgr.png") no-repeat top 50% left 50%;
+}
+.route-payment .content-data-button-wrapper .pen{
+    background: url("../../assets/img/pen.png") no-repeat top 50% left 50%;
+}
+.route-payment .content-data-button-wrapper .card{
+    background: url("../../assets/img/card.png") no-repeat top 50% left 50%;
+}
+@media screen and (max-width: 580px){
+    .route-payment .content-data-button-wrapper .badge {
+        width: 93px;
+        height: 93px;
+        -webkit-background-size: 40px;
+        background-size: 40px;
+    }
+}
+
+.route-payment .number-of-route{
+    display: block;
+    width: 62px;
+    height: 62px;
+    background: url("../../assets/img/plus-route.png") no-repeat top 50% left 50%;
+    position: absolute;
+    bottom: -28px;
+    right: 85px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 12px #888888;
+}
+@media screen and (max-width: 580px){
+    .route-payment .number-of-route{
+        width: 50px;
+        height: 50px;
+        right: 42px;
+        bottom: -19px;
+    }
+}
+
+.route-payment .number-of-route.close{
+    background: url("../../assets/img/plus-route-close.png") no-repeat top 50% left 50%;
+}
+
+.route-payment .additional-buttons{
+    margin: 38px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+}
+.route-payment .shadowed-button{
+    width: 47%;
+    height: 132px;
+    background-color: #fff;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+ }
+.route-payment .shadowed-button-title{
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #abadb6;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.route-payment .shadowed-button-text{
+    font-size: 32px;
+    color: #9c64e2;
+}
+@media screen and (max-width: 580px){
+    .route-payment .shadowed-button{
+        height: 90px;
+        background-color: #fff;
+        box-shadow: 5px 5px 12px 2px #d5d4d4;
+        border-radius: 7px;
+    }
+    .route-payment .shadowed-button-title{
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        text-transform: lowercase;
+        margin-bottom: 2px;
+    }
+    .route-payment .shadowed-button-text{
+        font-size: 22px;
+    }
+}
+
+.route-payment footer{
+    width: 100%;
+    border-top: solid 1px #e7e8ef;
+    background-color: #fff;
+    padding-bottom: 97px;
+    box-shadow: 0px -5px 10px #e7e8ef;
+    position: relative;
+}
+
+
+.route-payment .footer-text{
+    text-align: center;
+    color: #abadb6;
+    font-weight: 600;
+    padding: 40px 0 14px 0;
+}
+.route-payment .footer-text.second{
+    padding: 0px;
+}
+.route-payment .price-container{
+    margin: 35px auto 49px;
+    width: 87.5%;
+    display: flex;
+    justify-content: space-between;
+    color: #292b3a;
+    font-size: 52px;
+}
+.route-payment .price-container button{
+    width: 29%;
+    min-width: 86px;
+    height: 87px;
+    border-radius: 43px;
+    font-size: 28px;
+}
+.route-payment .price-container .button-minus{
+    background-color: #f9e3e8;
+    color: #da4665;
+}
+.route-payment .price-container .button-plus{
+    background-color: #e2faec;
+    color: #3ddc80;
+}
+@media screen and (max-width: 600px){
+    .route-payment .calculated-price{
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .route-payment .price-container{
+        margin: 15px auto 35px ;
+    }
+    .route-payment .price-container button{
+        font-size: 22px;
+    }
+    .route-payment .footer-text{
+        padding-top: 15px;
+    }
+}
+
+
+
+
+/*-------------------------- popup car-type -----------------------*/
+
+.route-payment .left-popup-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 4;
+}
+.route-payment .left-popup-menu.car-type-popup{
+    display: block;
+}
+
+.route-payment .left-popup-menu-content{
+    width: 80%;
+    height: 100%;
+    /*min-height: 100vh;*/
+    background-color: #fff;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (max-width: 650px) {
+    .route-payment .left-popup-menu-content{
+        width: 90%;
+    }
+}
+.route-payment .flex-top-wrapper{
+    height: calc(100vh - 140px);
+    overflow: scroll;
+}
+.route-payment .popup-title{
+    font-size: 32px;
+    color: #abadb6;
+    font-weight: 600;
+    margin-top: 63px;
+    padding-left: 9%;
+}
+@media screen and (max-width: 510px) {
+    .route-payment .popup-title{
+        font-size: 19px;
+        margin-top: 20px;
+    }
+}
+
+.route-payment .car-type-popup label{
+    display: block;
+    width: 85%;
+    border: solid 2px #dbdde7;
+    background-color: #fff;
+    border-radius: 9px;
+    margin: 0 auto 20px;
+    padding: 14px 10px 0 32% ;
+    font-size: 30px;
+    color: #babcc8;
+    font-weight: normal;
+}
+@media screen and (max-width: 650px) {
+    .route-payment .car-type-popup label{
+        width: 92%;
+        padding-left: 45%;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 380px) {
+    .car-type-popup label{
+        padding-left: 53%;
+        font-size: 21px;
+    }
+}
+
+.route-payment .car-type-popup label p{
+    font-size: 24px;
+    color: #abadb6;
+    margin-top: 5px;
+}
+@media screen and (max-width: 650px) {
+    .route-payment .car-type-popup label p{
+        font-size: 16px;
+    }
+}
+.route-payment .car-type-popup input{
+    display: none;
+}
+
+
+.route-payment .car-type-popup input#economic + label{
+    background: url("../../assets/img/car_class_economic.png") no-repeat left 6% top 50%;
+    background-color: #fff;
+}
+.route-payment .car-type-popup input#comfort + label{
+    background: url("../../assets/img/car_class_comfort.png") no-repeat left 6% top 50%;
+    background-color: #fff;
+}
+.route-payment .car-type-popup input#van + label{
+    background: url("../../assets/img/car_class_van.png") no-repeat left 6% top 50%;
+    background-color: #fff;
+}
+.route-payment .car-type-popup input#economic:checked + label{
+    background: url("../../assets/img/car_class_economic.png") no-repeat left 6% top 50%, url("../../assets/img/car_class_mark.png") no-repeat right 3% top 13%;
+    border: solid 2px #7664ca;
+    color: #7664ca;
+}
+.route-payment .car-type-popup input#comfort:checked + label{
+    background: url("../../assets/img/car_class_comfort.png") no-repeat left 6% top 50%, url("../../assets/img/car_class_mark.png") no-repeat right 3% top 13%;
+    border: solid 2px #7664ca;
+    color: #7664ca;
+}
+.route-payment .car-type-popup input#van:checked + label{
+    background: url("../../assets/img/car_class_van.png") no-repeat left 6% top 50%, url("../../assets/img/car_class_mark.png") no-repeat right 3% top 13%;
+    border: solid 2px #7664ca;
+    color: #7664ca;
+}
+@media screen and (max-width: 430px) {
+    .route-payment .car-type-popup input#economic:checked + label{
+        background: url("../../assets/img/car_class_mark.png") no-repeat left 5% top 13%, url("../../assets/img/car_class_economic.png") no-repeat left 6% top 50%;
+        color: #7664ca;
+    }
+    .route-payment .car-type-popup input#comfort:checked + label{
+        background: url("../../assets/img/car_class_mark.png") no-repeat left 5% top 13%, url("../../assets/img/car_class_comfort.png") no-repeat left 6% top 50%;
+        color: #7664ca;
+    }
+    .route-payment .car-type-popup input#van:checked + label{
+        background: url("../../assets/img/car_class_mark.png") no-repeat left 5% top 13%, url("../../assets/img/car_class_van.png") no-repeat left 6% top 50%;
+        color: #7664ca;
+    }
+}
+
+.route-payment .flex-bottom-wrapper{
+    width: 100%;
+    margin-bottom: 43px;
+    margin-bottom: 4vh;
+}
+
+/*--------------card-payment-popup--------------*/
+
+.route-payment .card-payment-popup.card-payment-popup{
+    display: none;
+}
+.route-payment .card-payment-popup.card-payment-popup--open{
+    display: block;
+}
+
+.route-payment .card-payment-popup.card-payment-popup label{
+    margin: 0 auto 25px;
+    padding: 13px 0px 15px 86px;
+}
+@media screen and (max-width: 650px) {
+    .route-payment .card-payment-popup.card-payment-popup label{
+        /*padding-left: 45%;*/
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .route-payment .card-payment-popup.card-payment-popup label{
+        font-size: 21px;
+        padding: 9px 38px 10px 69px;
+    }
+}
+
+.route-payment .card-payment-popup input#cash + label{
+    background: url("../../assets/img/purse_gray.png") no-repeat left 6% top 50%;
+}
+.route-payment .card-payment-popup input#first-card + label{
+    background: url("../../assets/img/card_gray.png") no-repeat left 6% top 50%;
+}
+.route-payment .card-payment-popup input#second-card + label{
+    background: url("../../assets/img/card_gray.png") no-repeat left 6% top 50%;
+}
+.route-payment .card-payment-popup input#cash:checked + label{
+    background: url("../../assets/img/purse_purple.png") no-repeat left 6% top 50%, url("../../assets/img/car_class_mark.png") no-repeat right 4% top 50%;
+    border: solid 2px #7664ca;
+    color: #7664ca;
+}
+.route-payment .card-payment-popup input#first-card:checked + label{
+    background: url("../../assets/img/card_purple.png") no-repeat left 6% top 50%, url("../../assets/img/car_class_mark.png") no-repeat right 4% top 50%;
+    border: solid 2px #7664ca;
+    color: #7664ca;
+}
+.route-payment .card-payment-popup input#second-card:checked + label{
+    background: url("../../assets/img/card_purple.png") no-repeat left 6% top 50%, url("../../assets/img/car_class_mark.png") no-repeat right 4% top 50%;
+    border: solid 2px #7664ca;
+    color: #7664ca;
+}
+
+.route-payment .button-add-card{
+    display: block;
+    height: 72px;
+    width: 78.87%;
+    border-radius: 35px;
+    margin: 23px auto 0;
+    color: #7664ca;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding-left: 50px;
+    background: url("../../assets/img/button_purse.png") no-repeat left 12% top 50%;
+    background-color: #ebe8f7;
+}
+
+@media screen and (max-width: 500px){
+    .route-payment .button-add-card{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width: 389px){
+    .route-payment .button-add-card{
+        background: none;
+        padding-left: 0;
+        background-color: #ebe8f7;
+    }
+}
+
+
+/*----------------- 04_Заказ_допуслуги ----------------*/
+.left-popup-menu.additional-services{
+    display: none;
+}
+/*.route-payment .additional-services{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: rgba(0, 0, 0, 0.65);*/
+    /*display: block;*/
+/*}*/
+/*.route-payment .additional-services-content{*/
+    /*width: 80%;*/
+    /*height: 100%;*/
+    /*min-height: 690px;*/
+    /*background-color: #fff;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+/*}*/
+@media screen and (max-width: 650px) {
+    .route-payment .left-popup-menu-content{
+        width: 90%;
+    }
+}
+.route-payment .additional-services input{
+    display: none;
+}
+.route-payment .additional-services input + label{
+    display: block;
+    height: 48px;
+    font-size: 32px;
+    padding: 0 6% 0 68px;
+    margin: 0 0 48px 6.8%;
+    background: url("../../assets/img/add_serv_inp_bgr.png") no-repeat top 50% left;
+}
+.route-payment .additional-services input:checked + label{
+    background: url("../../assets/img/add_serv_inp_bgr_active.png") no-repeat top 50% left;
+}
+@media screen and (max-width: 600px){
+    .route-payment .additional-services input + label{
+        height: 48px;
+        font-size: 25px;
+        padding: 7px 6% 0 68px;
+        margin: 0 0 28px 6.8%;
+    }
+}
+@media screen and (max-width: 510px){
+    .route-payment .additional-services input + label{
+        height: 44px;
+        font-size: 19px;
+        padding: 8px 6% 0 48px;
+        margin: 0 0 13px 6.8%;
+        -webkit-background-size: 28px;
+        background-size: 28px;
+    }
+}
+@media screen and (max-width: 510px){
+    .route-payment .additional-services input:checked + label{
+        -webkit-background-size: 28px;
+        background-size: 28px;
+    }
+}

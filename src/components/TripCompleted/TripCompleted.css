@@ -1,0 +1,186 @@
+.trip-completed.container{
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+.trip-completed .trip-completed-content{
+    height: calc(100% - 122px);
+    overflow: auto;
+    display: flex;
+    background-color: #fff;
+}
+
+.trip-completed .flex-inner{
+    width: 92%;
+    height: 80vh;
+    min-height: 665px;
+    margin: auto;
+    border-radius: 14px;
+    box-shadow: 0px 0px 45px -5px grey;
+    position: relative;
+}
+@media screen and (max-height: 800px) {
+    .trip-completed .flex-inner{
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 800px) and (min-height: 700px) {
+    .trip-completed .flex-inner{
+        height: 730px;
+    }
+}
+
+.trip-completed .header-total-sum{
+    height: 175px;
+    height: 23vh;
+    min-height: 170px;
+    background-color: #72ff8b;
+    border-radius: 14px;
+    box-shadow: 0px 7px 18px #c2c2c2;
+    text-align: center;
+    font-size: 98px;
+    font-weight: 600;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.trip-completed .header-total-sum p{
+    margin: 0;
+    font-size: 32px;
+    line-height: 40px;
+}
+@media screen and (max-width: 480px) {
+    .trip-completed .header-total-sum{
+        font-size: 65px;
+        height: 125px;
+        height: 16vh;
+    }
+    .trip-completed .header-total-sum p{
+        font-size: 20px;
+    }
+}
+
+.trip-completed .distance-time{
+    height: 89px;
+    /*border-top: solid 2px #e7e8ef;*/
+    border-bottom: solid 2px #e7e8ef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    font-size: 30px;
+    color: #abadb6;
+    font-weight: normal;
+}
+@media screen and (max-width: 700px){
+    .trip-completed .distance-time{
+        font-size: 22px;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5px 0;
+    }
+}
+.trip-completed .distance-time span{
+    color: #292b3a;
+}
+
+.trip-completed .distance-time-distance{
+    background: url("../../assets/img/locator.png") no-repeat top 50% left;
+    padding-left: 38px;
+    padding-right: 10px;
+}
+.trip-completed .distance-time-time{
+    background: url("../../assets/img/clock.png") no-repeat top 50% left;
+    padding-left: 40px;
+}
+.trip-completed p.h1{
+    font-size: 32px;
+    color: #abadb6;
+    text-align: center;
+    padding-top: 35px;
+}
+@media screen and (max-width: 700px){
+    .trip-completed p.h1{
+        padding-top: 0;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
+.trip-completed .stars-container{
+    width: 71%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 600px){
+    .trip-completed .stars-container {
+        width: 80%;
+    }
+    .trip-completed .stars-container img{
+        width: 49px;
+        height: 49px;
+    }
+}
+@media screen and (max-width: 380px){
+    .trip-completed .stars-container {
+        width: 92%;
+    }
+}
+
+.trip-completed button.button-leave-feedback{
+    display: block;
+    height: 72px;
+    width: 78.87%;
+    border-radius: 35px;
+    margin: 23px auto 0;
+    color: #7664ca;
+    background-color: #ebe8f7;
+}
+.trip-completed button.button-leave-feedback p{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 26px;
+    padding-left: 40px;
+    text-transform: uppercase;
+    background: url("../../assets/img/button_comment.png") no-repeat left top 50%;
+}
+
+
+@media screen and (max-width: 500px){
+    .trip-completed button.button-leave-feedback p{
+        font-size: 18px;
+        width: 230px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width: 389px){
+    .route-payment .button-add-card{
+        background: none;
+        padding-left: 0;
+        background-color: #ebe8f7;
+    }
+}
+
+.trip-completed .press-down{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+@media screen and (max-width: 700px){
+    .trip-completed .press-down{
+        bottom: 20px;
+    }
+}
+
+@media only screen and (orientation: landscape){
+    .trip-completed .flex-inner{
+        min-height: 730px;
+    }
+    .trip-completed .header-total-sum{
+        min-height: 175px;
+    }
+}

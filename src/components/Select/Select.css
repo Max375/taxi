@@ -1,0 +1,88 @@
+.select{
+    position: relative;
+    width: 100%;
+}
+
+.select__options{
+    /*border: 1px solid black;*/
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 100%;
+    display: none;
+}
+
+.select__options--open{
+    display: block;
+}
+
+input.select__input-field{
+    display: block;
+    width: 89%;
+    height: 90px;
+    border-radius: 45px;
+    margin: 23px auto 0;
+    padding-left: 6.5%;
+    border: none;
+    font-size: 30px;
+    color: #292b3a;
+    box-shadow: 0px 5px 11px #c2c2c2;
+}
+@media screen and (max-width: 600px){
+    input.select__input-field{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 500px){
+    input.select__input-field{
+        height: 65px;
+        font-weight: normal;
+    }
+}
+@media screen and (max-width: 400px){
+    input.select__input-field{
+        font-size: 20px;
+    }
+}
+
+.select__not-found{
+    font-size: 16px;
+    display: block;
+}
+
+.options__elements{
+    font-size: 30px;
+    font-weight: 0;
+    width: 89%;
+    background: url("../../assets/img/select_loupe.png") no-repeat top 50% left 5%;
+    background-color: #fff;
+    height: 90px;
+    margin: 0 auto;
+    border-bottom: solid 1px #e7e8ef;
+    line-height: 82px;
+    padding-left: 15%;
+    box-shadow: 0px 5px 15px #c2c2c2;
+}
+@media screen and (max-width: 600px){
+    .options__elements{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 500px){
+    .options__elements{
+        height: 55px;
+        line-height: 50px;
+        font-weight: normal;
+        background: url("../../assets/img/select_loupe_reduced.png") no-repeat top 50% left 4%;
+        background-color: #fff;
+    }
+}
+@media screen and (max-width: 400px){
+    .options__elements{
+        font-size: 20px;
+    }
+}
+.options__elements:last-child{
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}

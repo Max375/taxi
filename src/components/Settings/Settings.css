@@ -1,0 +1,142 @@
+.settings.container{
+    flex-direction: column;
+    /*display: block;*/
+}
+
+.settings .settings-content{
+    padding: 53px 0;
+    height: calc(100vh - 122px);
+    overflow: auto;
+}
+.settings p.h2{
+    font-size: 28px;
+    color: #7664ca;
+    font-weight: 600;
+    margin: 0 0 10px 5.86%;
+}.
+@media screen and (max-width: 600px){
+    .settings p.h2{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 450px){
+    .settings p.h2{
+        font-size: 22px;
+        margin: 0 0 5px 4%;
+    }
+}
+
+.settings input{
+    display: block;
+}
+
+.settings label.checkbox-type-one {
+    display: block;
+    height: 113px;
+    border-bottom: solid 1px #e7e8ef;
+    font-size: 34px;
+    font-weight: normal;
+    padding: 31px 0 0 5.86%;
+    background: url('../../assets/img/checkbox_iphone.png') no-repeat top 50% right 5.86%;
+    transition: 0.4s;
+}
+@media screen and (max-width: 600px){
+    .settings label.checkbox-type-one {
+        font-size: 24px;
+        height: 97px;
+        padding-right: 107px;
+    }
+}
+@media screen and (max-width: 450px){
+    .settings label.checkbox-type-one {
+        font-size: 18px;
+        height: 89px;
+        padding-left: 4%;
+        background: url('../../assets/img/checkbox_iphone_reduced.png') no-repeat top 50% right 4%;
+    }
+}
+.settings input#traffic-jam,
+input#expensive-cars,
+input#update-automatically,
+input#turn-on-notifications{
+    display: none;
+}
+.settings input#traffic-jam:checked +label,
+          input#expensive-cars:checked +label,
+          input#update-automatically:checked +label,
+          input#turn-on-notifications:checked +label{
+    background: url('../../assets/img/checkbox_iphone_checked.png') no-repeat top 50% right 5.86%;
+    transition: 0.4s;
+}
+@media screen and (max-width: 450px){
+    .settings input#traffic-jam:checked +label,
+    input#expensive-cars:checked +label,
+    input#update-automatically:checked +label,
+    input#turn-on-notifications:checked +label{
+        background: url('../../assets/img/checkbox_iphone_checked_reduced.png') no-repeat top 50% right 4%;
+    }
+}
+
+.settings p.h2.step-down{
+    margin-top: 53px;
+}
+
+.settings p.h3{
+    font-size: 34px;
+    margin: 38px 0 34px 5.86%;
+}
+@media screen and (max-width: 600px){
+    .settings p.h3{
+        font-size: 28px;
+        margin: 28px 0 5px 5.86%;
+    }
+}
+@media screen and (max-width: 450px){
+    .settings p.h3{
+        font-size: 22px;
+        margin: 28px 0 5px 4%;
+    }
+}
+
+.settings input#messages-from-driver,
+input#notifications-about-arriving,
+input#car-is-almost-here,
+input#notification-car-delay,
+input#notifications-of-app{
+    display: none;
+}
+
+.settings label.checkbox-type-two {
+    display: block;
+    height: 43px;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 24px 0 0 5.86%;
+    padding-left: 54px;
+    background: url('../../assets/img/checkbox_type_two.png') no-repeat top 50% left;
+    transition: 0.4s;
+}
+@media screen and (max-width: 600px){
+    .settings label.checkbox-type-two {
+        font-size: 22px;
+        margin: 24px 0 0 5.86%;
+        height: 33px;
+        /*border: solid 1px red;*/
+        padding-top: 4px;
+    }
+}
+@media screen and (max-width: 450px){
+    .settings label.checkbox-type-two {
+        font-size: 18px;
+        margin: 21px 0 0 4%;
+    }
+}
+
+.settings input#messages-from-driver:checked +label,
+input#notifications-about-arriving:checked +label,
+input#car-is-almost-here:checked +label,
+input#notification-car-delay:checked +label,
+input#notifications-of-app:checked +label{
+    background: url('../../assets/img/checkbox_type_two_checked.png') no-repeat top 50% left;
+    transition: 0.4s;
+}
