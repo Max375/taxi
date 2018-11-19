@@ -8,10 +8,10 @@ class Settings extends Component {
         return (
             <div className={'settings container'}>
                 <HeaderTypeOne headerTitle={'Отзыв о поездке'}/>
-                <div className="settings-content">
+                <div className="calc-content without-footer">
                     <p className="h2">Общие настройки</p>
 
-                    <input type="checkbox" id={'traffic-jam'} checked/>
+                    <input type="checkbox" id={'traffic-jam'} />
                     <label htmlFor={'traffic-jam'} className={'checkbox-type-one'}>
                         Пробки на карте
                     </label>
@@ -21,7 +21,7 @@ class Settings extends Component {
                         Только дорогие авто
                     </label>
 
-                    <input type="checkbox" id={'update-automatically'} checked/>
+                    <input type="checkbox" id={'update-automatically'} />
                     <label htmlFor={'update-automatically'} className={'checkbox-type-one'}>
                         Обновлять автоматически
                     </label>
@@ -44,7 +44,7 @@ class Settings extends Component {
                         Уведомления о прибытии
                     </label>
 
-                    <input type="checkbox" id={'car-is-almost-here'} checked/>
+                    <input type="checkbox" id={'car-is-almost-here'}/>
                     <label htmlFor={'car-is-almost-here'} className={'checkbox-type-two'}>
                         Машина подъезжает
                     </label>

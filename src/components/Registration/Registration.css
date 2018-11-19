@@ -17,14 +17,17 @@
 .registration .screen-wrapper--invalid input.input--invalid{
     border-bottom: solid 1px #e63f3f;
 }
-
-.registration .screen-wrapper--invalid .registration-error-text{
+.registration .error-text-container{
+    min-height: 25px;
+}
+.registration .screen-wrapper .registration-error-text{
     opacity: 0;
     transition: 0.3s opacity ease;
     color: #e63f3f;
     text-transform: none;
     font-weight: 600;
     margin: 0 0 0 10.56%;
+    padding: 0;
 }
 .registration .screen-wrapper--invalid .registration-error-text{
     opacity: 1;
@@ -40,7 +43,5 @@
     .registration .second-input{
         margin: 20px auto 35px;
     }
-    .registration .screen-wrapper--invalid .registration-error-text{
-        margin: 35px 0 0 10.56%;
-    }
+
 }

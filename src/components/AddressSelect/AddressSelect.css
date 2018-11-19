@@ -1,9 +1,9 @@
 .address-select.container{
-    display: block;
+    flex-direction: column;
 }
-.address-select{
-    max-height: 100%;
-    width: 100%;
+
+.address-select .calc-content{
     background: url("../../assets/img/background_map.png") no-repeat;
 }
+
 

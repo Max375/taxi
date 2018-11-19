@@ -12,7 +12,7 @@ class TaxiOrdering extends Component {
         return (
             <div className={'taxi-ordering container'}>
                 <HeaderTypeOne headerTitle={'Заказ такси'} />
-                <div className="taxi-ordering-content">
+                <div className="calc-content without-footer">
                     <CarInfo yearOfManufacture={'2017'} carModel={'Hyundai Solaris'} carPoint={'4.91'} timeToArrival={'15'} costTrip={'12.0'}/>
                     <CarInfo yearOfManufacture={'2018'} carModel={'Toyota Camry'} carPoint={'4.81'} timeToArrival={'11'} costTrip={'11.5'}/>
                     <CarInfo yearOfManufacture={'2016'} carModel={'Nissan Almera'} carPoint={'4.45'} timeToArrival={'8'} costTrip={'14.5'}/>

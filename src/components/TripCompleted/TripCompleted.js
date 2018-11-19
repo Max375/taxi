@@ -12,7 +12,7 @@ class TripCompleted extends Component {
         return (
             <div className={'trip-completed container'}>
                 <HeaderTypeTwo headerTitle={'Поездка завершена'} />
-                <div className="trip-completed-content">
+                <div className="calc-content without-footer">
                     <div className="flex-inner">
                         <div className="header-total-sum">
                             <p>Сумма к оплате</p>

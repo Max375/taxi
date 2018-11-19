@@ -26,7 +26,7 @@ input.select__input-field{
     border: none;
     font-size: 30px;
     color: #292b3a;
-    box-shadow: 0px 5px 11px #c2c2c2;
+    box-shadow: 0px 5px 35px 0px rgba(0, 1, 2, 0.12);
 }
 @media screen and (max-width: 600px){
     input.select__input-field{
@@ -61,7 +61,7 @@ input.select__input-field{
     border-bottom: solid 1px #e7e8ef;
     line-height: 82px;
     padding-left: 15%;
-    box-shadow: 0px 5px 15px #c2c2c2;
+    box-shadow: 0px 5px 35px 0px rgba(0, 1, 2, 0.12);
 }
 @media screen and (max-width: 600px){
     .options__elements{
@@ -73,8 +73,9 @@ input.select__input-field{
         height: 55px;
         line-height: 50px;
         font-weight: normal;
-        background: url("../../assets/img/select_loupe_reduced.png") no-repeat top 50% left 4%;
+        background-size: 23px 23px;
         background-color: #fff;
+        margin-top: -25px;
     }
 }
 @media screen and (max-width: 400px){

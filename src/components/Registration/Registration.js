@@ -11,8 +11,9 @@ class Registration extends Component {
             <div className="registration container">
                 <div className="screen-wrapper screen-wrapper--invalid">
                     <Logo mainText={'Регистрация'} secondaryText={'Регистрация в системе'} />
-
-                    <div className="registration-error-text">Текст ошибки</div>
+                    <div className="error-text-container">
+                        <div className="registration-error-text">Текст ошибки</div>
+                    </div>
                     <input type="text" placeholder={'ваш имя'} className={'first-input input--invalid'}/>
                     <input type="text" placeholder={'номер телефона'} className={'second-input'}/>
                     <Button text={'Войти'} />

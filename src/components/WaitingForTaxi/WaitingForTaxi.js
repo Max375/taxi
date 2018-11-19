@@ -10,7 +10,7 @@ class WaitingForTaxi extends Component {
         return (
             <div className="waiting-for-taxi container">
                 <HeaderTypeTwo headerTitle={'Ожидание такси'}/>
-                <div className="waiting-for-taxi__content">
+                <div className="calc-content without-footer">
                     <OrderedCarInfo yearOfManufacture={'2017'} carModel={'Hyundai Accent'} carColor={'белый'} carPoint={'5.0'} arrivalTime={'15'}/>
                 </div>
                 <div className="left-popup-menu">

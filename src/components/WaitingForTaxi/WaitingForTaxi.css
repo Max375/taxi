@@ -1,17 +1,19 @@
 .waiting-for-taxi.container{
-    display: block;
+
 }
-.waiting-for-taxi__content{
-     height: calc(100vh - 122px);
+.waiting-for-taxi .calc-content.without-footer{
      background: url("../../assets/img/background_map.png");
-     display: flex;
-     align-items: flex-end;
-     padding-bottom: 3vh;
+     /*display: flex;*/
+     /*align-items: flex-end;*/
+     /*padding-bottom: 30px;*/
  }
 
 
 
+/*-------------- popup отмена поездки -------------------*/
+
 .waiting-for-taxi .left-popup-menu{
+    display: none;
     position: absolute;
     top: 0;
     right: 0;

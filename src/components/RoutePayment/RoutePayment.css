@@ -3,23 +3,7 @@
     flex-direction: column;
     width: 100%;
 }
-@media (orientation: landscape){
-    .route-payment.container{
-        display: block;
-    }
-}
 
-.route-payment .route-payment-content{
-    padding-top: 20px;
-    height: calc(100vh - 231px);
-    overflow: scroll;
-}
-@media screen and (max-height: 630px){
-    .route-payment .route-payment-content{
-        padding-bottom: 0px;
-        overflow: visible;
-    }
-}
 
 .route-payment .content-data-button-wrapper{
     font-size: 0;
@@ -60,27 +44,65 @@
 
 .route-payment .number-of-route{
     display: block;
+    width: 92px;
+    height: 92px;
+    position: absolute;
+    bottom: -45px;
+    right: 85px;
+    z-index: 1;
+    background: none;
+    border-radius: 30%;
+}
+.route-payment .number-of-route .button-picture-btn{
     width: 62px;
     height: 62px;
+    margin: 0 auto;
     background: url("../../assets/img/plus-route.png") no-repeat top 50% left 50%;
-    position: absolute;
-    bottom: -28px;
-    right: 85px;
     border-radius: 50%;
-    box-shadow: 5px 5px 12px #888888;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
 }
-@media screen and (max-width: 580px){
-    .route-payment .number-of-route{
-        width: 50px;
-        height: 50px;
-        right: 42px;
-        bottom: -19px;
-    }
-}
-
-.route-payment .number-of-route.close{
+.route-payment .number-of-route.close .button-picture-btn{
     background: url("../../assets/img/plus-route-close.png") no-repeat top 50% left 50%;
 }
+@media screen and (max-width: 620px){
+    .route-payment .number-of-route{
+        width: 82px;
+        height: 82px;
+        bottom: -35px;
+        right: 35px;
+    }
+    .route-payment .number-of-route .button-picture-btn{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    .route-payment .number-of-route{
+        width: 70px;
+        height: 70px;
+        bottom: -28px;
+        right: 30px;
+    }
+}
+/*@media screen and (max-width: 500px){*/
+    /*.route-payment .number-of-route{*/
+        /*width: 92px;*/
+        /*height: 92px;*/
+        /*bottom: -45px;*/
+        /*right: 85px;*/
+        /*border: solid 1px red;*/
+    /*}*/
+    /*.route-payment .number-of-route .button-picture-btn{*/
+        /*width: 50px;*/
+        /*height: 50px;*/
+
+    /*}*/
+/*}*/
+
+
+/*.route-payment .number-of-route.close{*/
+    /*background: url("../../assets/img/plus-route-close.png") no-repeat top 50% left 50%;*/
+/*}*/
 
 .route-payment .additional-buttons{
     margin: 38px auto;
@@ -162,6 +184,7 @@
     border-radius: 43px;
     font-size: 28px;
 }
+
 .route-payment .price-container .button-minus{
     background-color: #f9e3e8;
     color: #da4665;
@@ -187,8 +210,32 @@
         padding-top: 15px;
     }
 }
+@media screen and (max-width: 500px){
+    .route-payment .price-container button{
+        height: 46px;
+        border-radius: 23px;
+        font-size: 18px;
+    }
+    .route-payment .footer-text{
+        padding: 15px 0 0 0;
+        font-weight: normal;
+        font-size: 14px;
 
+    }
+    .route-payment footer{
+        padding-bottom: 45px;
+    }
+    .route-payment .calculated-price{
+        font-size: 22px;
+        padding: 0 0 0 0 ;
+    }
+}
 
+@media screen and (max-height: 500px){
+    .route-payment.container{
+        display: block;
+    }
+}
 
 
 /*-------------------------- popup car-type -----------------------*/
@@ -203,7 +250,7 @@
     z-index: 4;
 }
 .route-payment .left-popup-menu.car-type-popup{
-    display: block;
+    display: none;
 }
 
 .route-payment .left-popup-menu-content{

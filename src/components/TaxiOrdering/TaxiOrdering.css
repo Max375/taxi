@@ -1,14 +1,11 @@
 .taxi-ordering.container{
-    display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
     width: 100%;
     height: 100%;
-
 }
-.taxi-ordering .taxi-ordering-content{
-    flex: 1;
-    overflow: auto;
-    padding-bottom: 40px;
-    height: calc(100vh - 122px);
+
+.taxi-ordering .calc-content.without-footer{
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 0 0 24px 0;
 }

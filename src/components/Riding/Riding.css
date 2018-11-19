@@ -1,14 +1,7 @@
-.riding.container{
-    height: 100%;
-    flex-direction: column;
-}
-.riding .riding-content{
-    height: calc(100vh - 122px);
-    overflow: auto;
+
+.riding .calc-content.without-footer{
     background: url("../../assets/img/background_map.png");
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 3vh;
+    padding-bottom: 24px;
 }
 
 @media screen and (max-width: 430px){

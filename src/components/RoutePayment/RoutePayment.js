@@ -15,16 +15,20 @@ class RoutePayment extends Component {
         return (
             <div className="route-payment container">
                 <HeaderTypeTwo headerTitle={'Заказать такси'} />
-                <div className={'route-payment-content'}>
+                <div className={'calc-content'}>
                     <div className={'content-data-button-wrapper'}>
                         <div className={'badge badge-a'}></div>
                         <DataButton title={'откуда'} mainText={'ул. Мазурова, 12'}/>
-                        <button className="number-of-route"></button>
+                        <button className="number-of-route">
+                            <div className="button-picture-btn"></div>
+                        </button>
                     </div>
                     <div className={'content-data-button-wrapper'}>
                         <div className={'badge badge-b'}></div>
                         <DataButton title={'куда'} mainText={'просп. Зависимости, 142'}/>
-                        <button className="number-of-route close"></button>
+                        <button className="number-of-route close">
+                            <div className="button-picture-btn"></div>
+                        </button>
                     </div>
                     <div className={'content-data-button-wrapper'}>
                         <div className={'badge badge-c'}></div>

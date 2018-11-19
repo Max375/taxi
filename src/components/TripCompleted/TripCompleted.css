@@ -12,12 +12,11 @@
 
 .trip-completed .flex-inner{
     width: 92%;
-    height: 80vh;
     min-height: 665px;
     margin: auto;
     border-radius: 14px;
-    box-shadow: 0px 0px 45px -5px grey;
     position: relative;
+    box-shadow: 0px 5px 35px 0px rgba(0, 1, 2, 0.12);
 }
 @media screen and (max-height: 800px) {
     .trip-completed .flex-inner{
@@ -31,12 +30,11 @@
 }
 
 .trip-completed .header-total-sum{
-    height: 175px;
-    height: 23vh;
+    height: 301px;
+    /*height: 23vh;*/
     min-height: 170px;
     background-color: #72ff8b;
     border-radius: 14px;
-    box-shadow: 0px 7px 18px #c2c2c2;
     text-align: center;
     font-size: 98px;
     font-weight: 600;
@@ -44,6 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 0px 5px 35px 0px rgba(0, 1, 2, 0.12);
 }
 
 .trip-completed .header-total-sum p{
@@ -51,7 +50,7 @@
     font-size: 32px;
     line-height: 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .trip-completed .header-total-sum{
         font-size: 65px;
         height: 125px;

@@ -55,11 +55,13 @@ class AddressSelect extends Component {
         return (
             <div className="address-select container">
                 <HeaderTypeOne headerTitle={'Отзыв о поездке'} />
-                <Select
-                    options = {[]}
-                    constOptions = {[{value: 'map',label: 'map', geocode: false}]}
-                    loadOptions={autoComplete}
-                />
+                <div className="calc-content">
+                    <Select
+                        options = {[]}
+                        constOptions = {[{value: 'map',label: 'map', geocode: false}]}
+                        loadOptions={autoComplete}
+                    />
+                </div>
                 <FooterButton nameButton={'Выбрать'} />
             </div>
         );

@@ -8,8 +8,8 @@ class PromoCode extends Component {
     render(){
         return(
             <div className={'promo-code container'}>
-                <HeaderTypeOne headerTitle={'Промокод'}/>
-                <div className="promo-code-content">
+                <HeaderTypeOne headerTitle={'История поездок'}/>
+                <div className="calc-content without-footer">
                     <div className={'enter-promo-code-wrapper'}>
                         <img src={promocodeCard} alt=""/>
                         <p className="h1">Ввести промокод</p>

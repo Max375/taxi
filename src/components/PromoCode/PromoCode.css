@@ -4,16 +4,16 @@
     background-color: #f7f7f7;
     text-align: center;
 }
-.promo-code .promo-code-content{
+/*.promo-code .promo-code-content{
     height: calc(100vh - 122px);
     overflow: auto;
-}
+}*/
 .promo-code .enter-promo-code-wrapper{
-    margin: 40px 4%;
+    margin: 0 4% 20px;
     background-color: #fff;
     border-radius: 13px;
-    box-shadow: 0px 0px 45px -5px grey;
     padding: 56px 0 59px;
+    box-shadow: 0px 5px 35px 0px rgba(0, 1, 2, 0.12);
 }
 @media screen and (max-width: 420px){
     .promo-code .enter-promo-code-wrapper{
@@ -26,6 +26,16 @@
     width: 168px;
     height: 119px;
     margin: 0 auto;
+}
+@media screen and (max-width: 600px){
+    .promo-code .enter-promo-code-wrapper{
+        margin: 25px 4%;
+        padding: 36px 0 30px;
+    }
+    .promo-code .enter-promo-code-wrapper img{
+        width: 120px;
+        height: 85px;
+    }
 }
 
 .promo-code p.h1{
@@ -89,7 +99,7 @@
     margin: 0px 4%;
     background-color: #fff;
     border-radius: 13px;
-    box-shadow: 0px 0px 45px -5px grey;
+    box-shadow: 0px 5px 35px 0px rgba(0, 1, 2, 0.12);
     padding: 0 0 52px;
 }
 @media screen and (max-width: 420px){

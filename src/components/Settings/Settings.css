@@ -1,28 +1,26 @@
 .settings.container{
-    flex-direction: column;
-    /*display: block;*/
+
 }
 
-.settings .settings-content{
-    padding: 53px 0;
-    height: calc(100vh - 122px);
+.settings .calc-content{
+    padding: 30px 0 30px 0;
     overflow: auto;
 }
 .settings p.h2{
     font-size: 28px;
     color: #7664ca;
     font-weight: 600;
-    margin: 0 0 10px 5.86%;
+    margin: 0 0 10px 46px;
 }.
 @media screen and (max-width: 600px){
     .settings p.h2{
         font-size: 24px;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .settings p.h2{
         font-size: 22px;
-        margin: 0 0 5px 4%;
+        margin: 0 0 5px 27px;
     }
 }
 
@@ -36,7 +34,7 @@
     border-bottom: solid 1px #e7e8ef;
     font-size: 34px;
     font-weight: normal;
-    padding: 31px 0 0 5.86%;
+    padding: 31px 0 0 46px;
     background: url('../../assets/img/checkbox_iphone.png') no-repeat top 50% right 5.86%;
     transition: 0.4s;
 }
@@ -47,11 +45,11 @@
         padding-right: 107px;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .settings label.checkbox-type-one {
         font-size: 18px;
         height: 89px;
-        padding-left: 4%;
+        padding: 31px 0 0 27px;
         background: url('../../assets/img/checkbox_iphone_reduced.png') no-repeat top 50% right 4%;
     }
 }
@@ -68,7 +66,7 @@ input#turn-on-notifications{
     background: url('../../assets/img/checkbox_iphone_checked.png') no-repeat top 50% right 5.86%;
     transition: 0.4s;
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .settings input#traffic-jam:checked +label,
     input#expensive-cars:checked +label,
     input#update-automatically:checked +label,
@@ -80,21 +78,26 @@ input#turn-on-notifications{
 .settings p.h2.step-down{
     margin-top: 53px;
 }
+@media screen and (max-width: 500px){
+    .settings p.h2.step-down{
+        margin: 28px 0 0 27px;
+    }
+}
 
 .settings p.h3{
     font-size: 34px;
-    margin: 38px 0 34px 5.86%;
+    margin: 38px 0 34px 46px;
 }
 @media screen and (max-width: 600px){
     .settings p.h3{
         font-size: 28px;
-        margin: 28px 0 5px 5.86%;
+        margin: 28px 0 5px 46px;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .settings p.h3{
         font-size: 22px;
-        margin: 28px 0 5px 4%;
+        margin: 28px 0 5px 27px;
     }
 }
 
@@ -111,7 +114,7 @@ input#notifications-of-app{
     height: 43px;
     font-size: 30px;
     font-weight: normal;
-    margin: 24px 0 0 5.86%;
+    margin: 24px 0 0 46px;
     padding-left: 54px;
     background: url('../../assets/img/checkbox_type_two.png') no-repeat top 50% left;
     transition: 0.4s;
@@ -119,16 +122,16 @@ input#notifications-of-app{
 @media screen and (max-width: 600px){
     .settings label.checkbox-type-two {
         font-size: 22px;
-        margin: 24px 0 0 5.86%;
+        margin: 24px 0 0 46px;
         height: 33px;
         /*border: solid 1px red;*/
         padding-top: 4px;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .settings label.checkbox-type-two {
         font-size: 18px;
-        margin: 21px 0 0 4%;
+        margin: 15px 0 0 26px;
     }
 }
 
