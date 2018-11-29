@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './OrderedCarInfo.css';
+import './Expectation.css';
 import signHyundaiBig from '../../assets/img/sign_hyundai_big.png';
 
 
-class OrderedCarInfo extends React.Component {
+class Expectation extends React.Component {
     render() {
         return (
             <div className={'ordered-car-info'}>
@@ -38,4 +38,4 @@ class OrderedCarInfo extends React.Component {
         )
     }
 }
-export default OrderedCarInfo;
+export default Expectation;

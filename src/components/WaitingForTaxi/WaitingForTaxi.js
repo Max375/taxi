@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './WaitingForTaxi.css';
 import HeaderTypeTwo from '../HeaderTypeTwo/HeaderTypeTwo';
-import OrderedCarInfo from '../OrderedCarInfo/OrderedCarInfo';
+import Expectation from '../Expectation/Expectation';
 import Button from "../Button/Button";
 
 class WaitingForTaxi extends Component {
@@ -11,7 +11,7 @@ class WaitingForTaxi extends Component {
             <div className="waiting-for-taxi container">
                 <HeaderTypeTwo headerTitle={'Ожидание такси'}/>
                 <div className="calc-content without-footer">
-                    <OrderedCarInfo yearOfManufacture={'2017'} carModel={'Hyundai Accent'} carColor={'белый'} carPoint={'5.0'} arrivalTime={'15'}/>
+                    <Expectation yearOfManufacture={'2017'} carModel={'Hyundai Accent'} carColor={'белый'} carPoint={'5.0'} arrivalTime={'15'}/>
                 </div>
                 <div className="left-popup-menu">
                     <div className="left-popup-menu-content">
